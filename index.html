@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Анимация стока</title>
+<meta name="description" content="Плагин Топоматик 360: анимация стока воды по поверхности и проверки бессточных понижений.">
+<style>
+:root{--bg:#fff;--fg:#1e1e1e;--muted:#5b6470;--accent:#1064af;--accent-fg:#fff;--card:#f3f6fa;--line:#d9e0e8}
+@media (prefers-color-scheme:dark){:root{--bg:#171717;--fg:#eceff3;--muted:#9aa4b0;--accent:#3089d9;--accent-fg:#0b1118;--card:#1f2328;--line:#2f353c}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:640px;margin:0 auto;padding:48px 16px}
+h1{margin:0 0 4px;font-size:1.9rem}
+.ver{color:var(--muted);margin:0 0 24px}
+p{margin:0 0 16px}
+.btn{display:inline-block;padding:12px 22px;border-radius:10px;background:var(--accent);color:var(--accent-fg);font-weight:600;text-decoration:none}
+.btn:hover{filter:brightness(1.08)}
+.card{margin-top:32px;padding:16px 20px;border:1px solid var(--line);border-radius:12px;background:var(--card)}
+.card h2{margin:0 0 8px;font-size:1rem}
+code{display:block;margin-top:6px;padding:8px 10px;border-radius:8px;background:var(--bg);border:1px solid var(--line);overflow-wrap:anywhere;font-size:.9rem}
+ul{margin:0;padding-left:20px}
+footer{margin-top:32px;color:var(--muted);font-size:.9rem}
+a{color:var(--accent)}
+</style>
+</head>
+<body>
+<main>
+<h1>Анимация стока</h1>
+<p class="ver">Плагин для Топоматик 360 · версия 1.1.0</p>
+<p>Показывает анимацией, куда стекает вода по поверхности. Два правила в панели «Проверки» находят бессточные понижения и участки недостаточного уклона. По клику на строку в «Диагностике» камера переходит к месту, и запускается анимация стока для этой проблемы.</p>
+<p><a class="btn" href="https://360.topomatic.ru?extensionInstallPath=https%3A%2F%2Fy-abramov.github.io%2Fflowanim%2F">Установить в Топоматик 360</a></p>
+<div class="card">
+<h2>Установка вручную</h2>
+<p>В Топоматик 360 выполните команду «Установить плагин» и укажите адрес:</p>
+<code>https://y-abramov.github.io/flowanim/</code>
+</div>
+<footer>
+<ul>
+<li><a href="https://abrmove.ru/modules/abr-flowanim/">Описание и инструкции</a></li>
+<li><a href="https://github.com/Y-Abramov/flowanim/releases">Пакет .apx для установки из файла</a></li>
+</ul>
+<p style="margin-top:16px">Разработчик: <a href="https://abrmove.ru">Abrmove</a></p>
+</footer>
+</main>
+</body>
+</html>
